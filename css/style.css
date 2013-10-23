@@ -1,1 +1,29 @@
 /* Author: Josemberg Gomes */
+
+.container {max-width: 960px; margin: 0 auto;}
+
+.header {height: 100px; background: #eee;}
+.header h1 {float: left; font-family: 'Questrial', sans-serif; margin: 45px 0 0 20px;}
+
+.menu {height: 50px; width: 70%; float: right; margin: 25px 20px 0 0; border-radius: 10px; overflow: hidden; box-shadow: 2px 2px 2px #999; border: 1px solid #aaa;}
+.item-menu {float: left;display: block; width: 16.66666666666667%;}
+.item-menu a, .pull {font-family: 'Questrial', sans-serif; width: 100%; display: block; height: 50px; text-align: center; line-height: 50px;	background: linear-gradient(#ccc, #aaa); text-transform: uppercase; color: #fff; text-shadow: 1px 1px 1px #333; text-decoration: none; border-left: 1px solid #aaa;} 
+
+.item-menu a:hover, .pull:hover {background: linear-gradient(#aaa, #ccc);}
+.pull {display: none;}
+
+@media screen and (max-width: 768px) {
+	.menu {position: absolute; left: -71%; top: 0; margin: 0; height: auto; border-radius: 0;}
+	.mactive {left: 0;}
+	.item-menu {float: none; display: block; width: 100%; border-top: 1px solid #999;}
+	.pull {display: block; float: right; margin: 25px 20px 0 0; border-radius: 10px; overflow: hidden; box-shadow: 2px 2px 2px #999; width: 70px; border: 1px solid #aaa;}
+}
+
+
+/* Visually Hidden */
+.visuallyhidden {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+
+/* clearfix */
+.clearfix:before, .clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
